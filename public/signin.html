@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <script src="signin.js"defer></script>
+    <title>Regester</title>
+</head>
+<body>
+    <div class="formdiv">
+        <h2>Create New Account</h2>
+        <form id="registerForm">
+            <div class="inputfeald">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="inputfeald">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="inputfeald">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+        <div id="message"></div>
+    </div>
+</body>
+</html>

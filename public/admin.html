@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./admin.css">
+    <script src="./admin.js"defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Fundee</h1>
+            <div id="navside">
+                <button onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Admin</h2>
+        <section class="adminsection">
+            <h3>Users</h3>
+            <table class="admintable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th class="hide">Email</th>
+                        <th class="hide">Role</th>
+                        <th class="hide">Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTableBody"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Campaigns</h3>
+            <table class="admintable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th class="hide">Goal</th>
+                        <th class="hide">Category</th>
+                        <th class="hide">Deadline</th>
+                        <th class="hide">Approval Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="campaignsTableBody"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Pledges</h3>
+            <table class="admintable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Campaign Id</th>
+                        <th class="hide">User Id</th>
+                        <th>Amount</th>                       
+                    </tr>
+                </thead>
+                <tbody id="pledgesTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

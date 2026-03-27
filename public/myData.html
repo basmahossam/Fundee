@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./myData.js"defer></script>
+</head>
+<body>
+    <nav>
+        <h1>Fundee</h1>
+        <div id="navside">
+        <a href="index.html">Home</a>
+        </div>
+    </nav>
+        <main class="container">
+        <h2>My Data</h2>
+        <section>
+            <h3>My Campaigns</h3>
+            <table class="admintable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th class="hide">Goal</th>
+                        <th class="hide">Category</th>
+                        <th class="hide">Deadline</th>
+                        <th class="hide">Approval Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="campaignsTableBody"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>My Pledges</h3>
+            <table class="admintable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Campaign Id</th>
+                        <th class="hide">User Id</th>
+                        <th>Amount</th>                       
+                    </tr>
+                </thead>
+                <tbody id="pledgesTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

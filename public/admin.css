@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f68f; 
+    color: #333;
+}
+
+main {
+    width: 80%;
+    margin: 2rem auto; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#navside{
+    display: flex;
+    align-items: center;
+}
+#navside button{
+    color: #19765a;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 1rem;
+    cursor: pointer;
+    background:none;
+    border: 3px #19765a solid;
+    border-radius: 8px;
+}
+#navside button:hover {
+    color: white;
+    background-color: #19765a;
+}
+#navside a:hover {
+    color: #19765a;
+}
+#navside a {
+    color: #083527;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+nav>h1{
+    color: #19765a;
+}
+
+
+section{
+    margin: 3rem 0rem;
+}
+
+
+.admintable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+h2 ,h3{
+    color: #083527;
+}
+.admintable th, .admintable td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admintable th {
+    background-color: #f8f9fa;
+    color: #083527;
+}
+
+.approveBtn {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+.approveBtn:hover {
+    background-color: #0056b3; 
+}
+
+.banBtn {
+    background-color: #dc3545; 
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+.banBtn:hover {
+    background-color: #c82333; 
+}
+
+@media all and (max-width:1000px){
+    td{
+        padding: .2rem;
+        margin: .2rem;
+        font-size: 1rem;
+    }
+    .hide{
+        display: none;
+    }
+    .admintable th, .admintable td {
+    padding: .5rem;
+    }
+}
+

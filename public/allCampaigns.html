@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./allCampaigns.js"defer></script>
+</head>
+<body>
+    <nav>
+        <h1>Fundee</h1>
+        <div id="navside"></div>
+    </nav>
+    <main>
+        <div class="inputfeald">
+            <label for="category">Categories </label>
+            <select id="category">
+            <option value="">All Categories</option>
+            <option value="personal">Personal</option>
+            <option value="technology">Technology</option>
+            <option value="business">Business</option>
+            <option value="emergency">Emergency</option>
+            <option value="medical">Medical</option>
+            <option value="education">Education</option>
+            <option value="family">Family</option>
+            <option value="travel">Travel</option>
+            <option value="sport">Sport</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search campaigns">
+            <button id="searchBtn">Search</button>
+        </div>
+            <div id="mainflex">
+            <h2>Campaigns</h2>
+        </div>
+        <div id="maincontainer" class="grid"></div>
+    </main>
+</body>
+</html>
